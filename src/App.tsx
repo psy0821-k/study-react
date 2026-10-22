@@ -1,17 +1,8 @@
-import styles from './App.module.css';
-import Footer from './components/footer/Footer';
-import Header from './components/header/header';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/router';
 
 function App() {
-  return (
-    <>
-      <Header />
-      <main className={styles.main}>
-        <section></section>
-      </main>
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
