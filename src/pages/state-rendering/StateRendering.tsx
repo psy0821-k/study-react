@@ -22,6 +22,11 @@ const StateRendering = () => {
               조건부 렌더링
             </NavLink>
           </li>
+          <li>
+            <NavLink to={BASE_URL.CONTROLLED_COMPONENT} className="block w-full p-2 hover:bg-amber-200">
+              제어 컴포넌트
+            </NavLink>
+          </li>
         </ul>
       </nav>
 

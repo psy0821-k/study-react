@@ -5,5 +5,6 @@ export const PATHS = {
     HOME: '/state-rendering',
     COMPONENT_STATE: 'component-state',
     CONDITIONAL_RENDERING: 'conditional-rendering',
+    CONTROLLED_COMPONENT: 'controlled-component',
   },
 } as const;
