@@ -1,14 +1,13 @@
 import { createBrowserRouter, type RouteObject } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
+import { lazyPage } from './lazy-page';
 import { PATHS } from './paths';
-
-const lazyPage = (loader: () => Promise<{ default: React.ComponentType }>): Pick<RouteObject, 'lazy'> => ({
-  lazy: async () => ({ Component: (await loader()).default }),
-});
+import { stateRenderingRoutes } from './state-rendering-routes';
 
 const pageRoutes: RouteObject[] = [
   { path: PATHS.HOME, ...lazyPage(() => import('../pages/Home')) },
   { path: PATHS.ROUTE, ...lazyPage(() => import('../pages/Route')) },
+  stateRenderingRoutes,
   { path: '*', ...lazyPage(() => import('../pages/NotFound')) },
 ];
 
