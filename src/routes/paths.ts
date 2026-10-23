@@ -3,6 +3,6 @@ export const PATHS = {
   ROUTE: '/route',
   STATE_RENDERING: {
     HOME: '/state-rendering',
-    TEST: '/state-rendering/TEST',
+    COMPONENT_STATE: 'component-state',
   },
 } as const;

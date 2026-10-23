@@ -5,15 +5,17 @@ const StateRendering = () => {
   const BASE_URL = PATHS.STATE_RENDERING;
   return (
     <div className="min-h-screen">
-      <nav className="fixed left-0 top-0 h-screen w-48 border-r p-6">
+      <nav className="fixed left-0 top-0 h-screen w-48 border-r p-6 mt-14">
         <ul className="flex flex-col gap-4">
           <li>
-            <NavLink to={BASE_URL.HOME} end>
+            <NavLink to={BASE_URL.HOME} end className="block w-full p-2 hover:bg-amber-200">
               폼
             </NavLink>
           </li>
           <li>
-            <NavLink to={BASE_URL.TEST}>테스트</NavLink>
+            <NavLink to={BASE_URL.COMPONENT_STATE} className="block w-full p-2 hover:bg-amber-200">
+              컴포넌트 스테이트
+            </NavLink>
           </li>
         </ul>
       </nav>
