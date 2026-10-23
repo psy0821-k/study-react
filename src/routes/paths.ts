@@ -4,5 +4,6 @@ export const PATHS = {
   STATE_RENDERING: {
     HOME: '/state-rendering',
     COMPONENT_STATE: 'component-state',
+    CONDITIONAL_RENDERING: 'conditional-rendering',
   },
 } as const;

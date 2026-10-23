@@ -17,6 +17,11 @@ const StateRendering = () => {
               컴포넌트 스테이트
             </NavLink>
           </li>
+          <li>
+            <NavLink to={BASE_URL.CONDITIONAL_RENDERING} className="block w-full p-2 hover:bg-amber-200">
+              조건부 렌더링
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
