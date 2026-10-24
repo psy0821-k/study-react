@@ -8,5 +8,6 @@ export const PATHS = {
     CONTROLLED_COMPONENT: 'controlled-component',
     EVENT_HANDLING: 'event-handling',
     STATE_IS_SNAPSHOT: 'state-is-snapshot',
+    UPDATE_STATE: 'update-state',
   },
 } as const;

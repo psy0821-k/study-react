@@ -37,6 +37,11 @@ const StateRendering = () => {
               스냅샷
             </NavLink>
           </li>
+          <li>
+            <NavLink to={BASE_URL.UPDATE_STATE} className="block w-full p-2 hover:bg-amber-200">
+              상태 업데이트
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
