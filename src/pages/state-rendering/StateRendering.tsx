@@ -27,6 +27,11 @@ const StateRendering = () => {
               제어 컴포넌트
             </NavLink>
           </li>
+          <li>
+            <NavLink to={BASE_URL.EVENT_HANDLING} className="block w-full p-2 hover:bg-amber-200">
+              이벤트 핸들링
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
