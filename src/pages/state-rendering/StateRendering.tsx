@@ -32,6 +32,11 @@ const StateRendering = () => {
               이벤트 핸들링
             </NavLink>
           </li>
+          <li>
+            <NavLink to={BASE_URL.STATE_IS_SNAPSHOT} className="block w-full p-2 hover:bg-amber-200">
+              스냅샷
+            </NavLink>
+          </li>
         </ul>
       </nav>
 

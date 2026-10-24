@@ -7,5 +7,6 @@ export const PATHS = {
     CONDITIONAL_RENDERING: 'conditional-rendering',
     CONTROLLED_COMPONENT: 'controlled-component',
     EVENT_HANDLING: 'event-handling',
+    STATE_IS_SNAPSHOT: 'state-is-snapshot',
   },
 } as const;
