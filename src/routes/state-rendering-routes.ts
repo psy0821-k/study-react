@@ -6,7 +6,7 @@ export const stateRenderingRoutes: RouteObject = {
   path: PATHS.STATE_RENDERING.HOME,
   ...lazyPage(() => import('../pages/state-rendering/StateRendering')),
   children: [
-    { index: true, ...lazyPage(() => import('../pages/state-rendering/EmployeeForm')) },
+    { index: true, ...lazyPage(() => import('../pages/state-rendering/Home')) },
     { path: PATHS.STATE_RENDERING.COMPONENT_STATE, ...lazyPage(() => import('../pages/state-rendering/ComponentState')) },
     { path: PATHS.STATE_RENDERING.CONDITIONAL_RENDERING, ...lazyPage(() => import('../pages/state-rendering/ConditionalRendering')) },
     { path: PATHS.STATE_RENDERING.CONTROLLED_COMPONENT, ...lazyPage(() => import('../pages/state-rendering/ControlledComponent')) },

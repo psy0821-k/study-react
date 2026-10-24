@@ -9,7 +9,7 @@ const StateRendering = () => {
         <ul className="flex flex-col gap-4">
           <li>
             <NavLink to={BASE_URL.HOME} end className="block w-full p-2 hover:bg-amber-200">
-              폼
+              홈
             </NavLink>
           </li>
           <li>
