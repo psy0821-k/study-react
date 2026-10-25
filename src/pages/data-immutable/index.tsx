@@ -20,6 +20,11 @@ const MENUS = [
     title: '렌더 파이프라인',
     description: 'Trigger → Render → Commit으로 이어지는 리액트의 렌더링 과정을 주방 비유로 익힙니다.',
   },
+  {
+    path: BASE_URL.VIRTUAL_DOM,
+    title: '가상 DOM',
+    description: '바닐라 JS의 직접 DOM 조작과 리액트의 가상 DOM 방식을 비교해, 변경된 부분만 갱신하는 원리를 익힙니다.',
+  },
 ] as const;
 
 export default function Home() {

@@ -15,5 +15,6 @@ export const PATHS = {
     IMMUTABILITY: 'immutability',
     IMMUTABILITY_CRUD: 'immutability-crud',
     RENDER_PIPELINE: 'render-pipeline',
+    VIRTUAL_DOM: 'virtual-dom',
   },
 } as const;
