@@ -8,6 +8,7 @@ const stateImmutabilityRoutes: RouteObject = {
     { index: true, ...lazyPage(() => import('../pages/data-immutable')) },
     { path: PATHS.IMMUTABILITY_STATE.IMMUTABILITY, ...lazyPage(() => import('../pages/data-immutable/Immutability')) },
     { path: PATHS.IMMUTABILITY_STATE.IMMUTABILITY_CRUD, ...lazyPage(() => import('../pages/data-immutable/ImmutabilityCRUD')) },
+    { path: PATHS.IMMUTABILITY_STATE.RENDER_PIPELINE, ...lazyPage(() => import('../pages/data-immutable/RenderPipeline')) },
   ],
 };
 

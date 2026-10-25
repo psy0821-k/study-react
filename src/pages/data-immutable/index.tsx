@@ -15,6 +15,11 @@ const MENUS = [
     title: '불변성 CRUD',
     description: '장바구니 배열에서 상품을 추가, 수정, 삭제할 때 원본을 변경하지 않고 새 배열로 상태를 갱신하는 방법을 익힙니다.',
   },
+  {
+    path: BASE_URL.RENDER_PIPELINE,
+    title: '렌더 파이프라인',
+    description: 'Trigger → Render → Commit으로 이어지는 리액트의 렌더링 과정을 주방 비유로 익힙니다.',
+  },
 ] as const;
 
 export default function Home() {
