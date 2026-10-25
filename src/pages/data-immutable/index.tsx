@@ -10,6 +10,11 @@ const MENUS = [
     title: '',
     description: 'useState로 컴포넌트가 기억하는 값을 만들고, 값이 바뀌면 화면이 다시 그려지는 흐름을 익힙니다.',
   },
+  {
+    path: BASE_URL.IMMUTABILITY_CRUD,
+    title: '불변성 CRUD',
+    description: '장바구니 배열에서 상품을 추가, 수정, 삭제할 때 원본을 변경하지 않고 새 배열로 상태를 갱신하는 방법을 익힙니다.',
+  },
 ] as const;
 
 export default function Home() {

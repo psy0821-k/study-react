@@ -13,5 +13,6 @@ export const PATHS = {
   IMMUTABILITY_STATE: {
     HOME: '/immutability-state',
     IMMUTABILITY: 'immutability',
+    IMMUTABILITY_CRUD: 'immutability-crud',
   },
 } as const;
