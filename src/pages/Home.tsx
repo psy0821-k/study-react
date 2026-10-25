@@ -1,15 +1,27 @@
 import { Link } from 'react-router-dom';
 import { PATHS } from '../routes/paths';
 
+const mainMenu = [
+  {
+    title: 'State 렌더링 엔진',
+    path: PATHS.STATE_RENDERING.HOME,
+  },
+  {
+    title: '데이터와 불변성 복합 상태',
+    path: PATHS.IMMUTABILITY_STATE.HOME,
+  },
+];
+
 const Home = () => {
   return (
     <ul>
-      <li>
-        <Link to={PATHS.ROUTE}>라우트 테스트</Link>
-      </li>
-      <li>
-        <Link to={PATHS.STATE_RENDERING.HOME}>State 렌더링 엔진</Link>
-      </li>
+      {mainMenu.map((menu, i) => (
+        <li key={i + menu.title}>
+          <Link to={menu.path}>
+            {i + 1} {menu.title}
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 };

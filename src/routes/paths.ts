@@ -10,4 +10,8 @@ export const PATHS = {
     STATE_IS_SNAPSHOT: 'state-is-snapshot',
     UPDATE_STATE: 'update-state',
   },
+  IMMUTABILITY_STATE: {
+    HOME: '/immutability-state',
+    IMMUTABILITY: 'immutability',
+  },
 } as const;
