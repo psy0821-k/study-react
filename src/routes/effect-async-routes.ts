@@ -11,6 +11,7 @@ const effectAsyncRoutes: RouteObject = {
     { path: PATHS.EFFECT_ASYNC.EFFECT_DEPENDENCIES, ...lazyPage(() => import('../pages/effect-async/EffectDependencies/EffectDependencies')) },
     { path: PATHS.EFFECT_ASYNC.IGNORE_STATE_UPDATE, ...lazyPage(() => import('../pages/effect-async/IgnoreStateUpdate/IgnoreStateUpdate')) },
     { path: PATHS.EFFECT_ASYNC.RACE_CONDITION, ...lazyPage(() => import('../pages/effect-async/RaceCondition/RaceCondition')) },
+    { path: PATHS.EFFECT_ASYNC.DEBOUNCE, ...lazyPage(() => import('../pages/effect-async/Debounce/Debounce')) },
     { path: PATHS.EFFECT_ASYNC.DATA_FETCHING, ...lazyPage(() => import('../pages/effect-async/DataFetching/DataFetching')) },
   ],
 };

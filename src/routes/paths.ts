@@ -32,6 +32,7 @@ export const PATHS = {
     EFFECT_DEPENDENCIES: 'effect-dependencies',
     IGNORE_STATE_UPDATE: 'ignore-state-update',
     RACE_CONDITION: 'race-condition',
+    DEBOUNCE: 'debounce',
     DATA_FETCHING: 'data-fetching',
   },
 } as const;

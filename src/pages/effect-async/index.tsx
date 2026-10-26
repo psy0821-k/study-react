@@ -31,6 +31,11 @@ const MENUS = [
     description: 'AbortController로 이전 요청을 중단해, 응답 순서가 뒤바뀌어도 최신 요청의 결과만 화면에 반영되도록 처리합니다.',
   },
   {
+    path: BASE_URL.DEBOUNCE,
+    title: '디바운스',
+    description: 'setTimeout과 클린업으로 연속된 입력 중에는 실행을 미루고, 입력이 멈춘 뒤 한 번만 검색해 불필요한 요청을 줄입니다.',
+  },
+  {
     path: BASE_URL.DATA_FETCHING,
     title: '데이터 페칭',
     description: 'useEffect로 마운트 시 비동기 데이터를 불러오고, 로딩/에러/성공 상태에 따라 화면을 렌더링하는 방법을 익힙니다.',
