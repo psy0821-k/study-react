@@ -26,6 +26,11 @@ const MENUS = [
     description: '요청이 중복되거나 입력이 빠르게 바뀔 때, 클린업의 ignore 플래그로 이전 응답이 화면에 반영되지 않도록 막습니다.',
   },
   {
+    path: BASE_URL.RACE_CONDITION,
+    title: '경쟁 상태(Race Condition)',
+    description: 'AbortController로 이전 요청을 중단해, 응답 순서가 뒤바뀌어도 최신 요청의 결과만 화면에 반영되도록 처리합니다.',
+  },
+  {
     path: BASE_URL.DATA_FETCHING,
     title: '데이터 페칭',
     description: 'useEffect로 마운트 시 비동기 데이터를 불러오고, 로딩/에러/성공 상태에 따라 화면을 렌더링하는 방법을 익힙니다.',
