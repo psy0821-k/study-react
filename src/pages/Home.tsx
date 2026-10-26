@@ -14,6 +14,10 @@ const mainMenu = [
     title: '리스트 렌더링 설계',
     path: PATHS.LIST_RENDERING.HOME,
   },
+  {
+    title: '이펙트 비동기 통신',
+    path: PATHS.EFFECT_ASYNC.HOME,
+  },
 ];
 
 const Home = () => {

@@ -25,4 +25,7 @@ export const PATHS = {
     SHIFT_MANAGER: 'shift-manager',
     STATUS_LIST: 'status-list',
   },
+  EFFECT_ASYNC: {
+    HOME: '/effect-async',
+  },
 } as const;
