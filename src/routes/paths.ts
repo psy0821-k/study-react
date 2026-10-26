@@ -20,5 +20,6 @@ export const PATHS = {
   LIST_RENDERING: {
     HOME: '/list-rendering',
     PRODUCT_LIST: 'product-list',
+    PRODUCT_LIST_WITH_FILTER: 'product-list-with-filter',
   },
 } as const;
