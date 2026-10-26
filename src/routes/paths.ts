@@ -23,5 +23,6 @@ export const PATHS = {
     PRODUCT_LIST_WITH_FILTER: 'product-list-with-filter',
     SCHEDULE_TABLE: 'schedule-table',
     SHIFT_MANAGER: 'shift-manager',
+    STATUS_LIST: 'status-list',
   },
 } as const;

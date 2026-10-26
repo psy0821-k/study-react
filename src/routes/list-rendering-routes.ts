@@ -10,6 +10,7 @@ const listRenderingRoutes: RouteObject = {
     { path: PATHS.LIST_RENDERING.PRODUCT_LIST_WITH_FILTER, ...lazyPage(() => import('../pages/list-rendering-architecture/ProductListWithFilter')) },
     { path: PATHS.LIST_RENDERING.SCHEDULE_TABLE, ...lazyPage(() => import('../pages/list-rendering-architecture/ScheduleTable')) },
     { path: PATHS.LIST_RENDERING.SHIFT_MANAGER, ...lazyPage(() => import('../pages/list-rendering-architecture/ShiftManager')) },
+    { path: PATHS.LIST_RENDERING.STATUS_LIST, ...lazyPage(() => import('../pages/list-rendering-architecture/StatusList')) },
   ],
 };
 

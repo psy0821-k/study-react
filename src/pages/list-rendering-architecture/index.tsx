@@ -25,6 +25,11 @@ const MENUS = [
     title: '근무 순서 조정',
     description: '배열을 복사해 섞은 뒤 상태로 갱신하고, 순서가 바뀌어도 key로 각 항목을 안정적으로 유지하는 방법을 익힙니다.',
   },
+  {
+    path: BASE_URL.STATUS_LIST,
+    title: '상태별 목록',
+    description: '로딩 중, 데이터 없음, 데이터 있음 상태에 따라 화면을 조건부로 렌더링하는 방법을 익힙니다.',
+  },
 ] as const;
 
 export default function Home() {
