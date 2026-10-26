@@ -6,6 +6,11 @@ const BASE_URL = PATHS.FORM_HANDLING_DOM_REF;
 // 메뉴별 학습 주제 설명
 const MENUS = [
   {
+    path: BASE_URL.MULTI_INPUT_FORM,
+    title: '다중 입력 폼',
+    description: '여러 입력 필드의 값을 하나의 객체 상태로 관리하고, 폼 초기화(reset)를 처리하는 방법을 익힙니다.',
+  },
+  {
     path: BASE_URL.FORM_SUBMISSION,
     title: '폼 제출',
     description: '회원 가입 폼의 각 입력 필드를 검증하고, 제출 시 비동기 통신을 시뮬레이션해 성공 화면까지 처리하는 방법을 익힙니다.',
