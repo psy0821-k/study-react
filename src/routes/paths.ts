@@ -21,5 +21,6 @@ export const PATHS = {
     HOME: '/list-rendering',
     PRODUCT_LIST: 'product-list',
     PRODUCT_LIST_WITH_FILTER: 'product-list-with-filter',
+    SCHEDULE_TABLE: 'schedule-table',
   },
 } as const;
