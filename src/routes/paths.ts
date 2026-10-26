@@ -17,4 +17,7 @@ export const PATHS = {
     RENDER_PIPELINE: 'render-pipeline',
     VIRTUAL_DOM: 'virtual-dom',
   },
+  LIST_RENDERING: {
+    HOME: '/list-rendering',
+  },
 } as const;

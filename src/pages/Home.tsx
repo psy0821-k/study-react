@@ -10,6 +10,10 @@ const mainMenu = [
     title: '데이터와 불변성 복합 상태',
     path: PATHS.IMMUTABILITY_STATE.HOME,
   },
+  {
+    title: '리스트 렌더링 설계',
+    path: PATHS.LIST_RENDERING.HOME,
+  },
 ];
 
 const Home = () => {
