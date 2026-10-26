@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom';
+import { PATHS } from '../../routes/paths';
+
+const BASE_URL = PATHS.EFFECT_ASYNC;
+
 // 메뉴별 학습 주제 설명
-const MENUS = [] as const;
+const MENUS = [
+  {
+    path: BASE_URL.DATA_FETCHING,
+    title: '데이터 페칭',
+    description: 'useEffect로 마운트 시 비동기 데이터를 불러오고, 로딩/에러/성공 상태에 따라 화면을 렌더링하는 방법을 익힙니다.',
+  },
+] as const;
 
 export default function Home() {
   return (

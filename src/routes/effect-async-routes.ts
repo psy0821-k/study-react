@@ -6,6 +6,7 @@ const effectAsyncRoutes: RouteObject = {
   path: PATHS.EFFECT_ASYNC.HOME,
   children: [
     { index: true, ...lazyPage(() => import('../pages/effect-async')) },
+    { path: PATHS.EFFECT_ASYNC.DATA_FETCHING, ...lazyPage(() => import('../pages/effect-async/DataFetching/DataFetching')) },
   ],
 };
 

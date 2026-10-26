@@ -27,5 +27,6 @@ export const PATHS = {
   },
   EFFECT_ASYNC: {
     HOME: '/effect-async',
+    DATA_FETCHING: 'data-fetching',
   },
 } as const;
