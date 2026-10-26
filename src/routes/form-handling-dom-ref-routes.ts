@@ -1,0 +1,13 @@
+import type { RouteObject } from 'react-router-dom';
+import { PATHS } from './paths';
+import { lazyPage } from './lazy-page';
+
+const formHandlingDomRefRoutes: RouteObject = {
+  path: PATHS.FORM_HANDLING_DOM_REF.HOME,
+  children: [
+    { index: true, ...lazyPage(() => import('../pages/form-handling-dom-ref')) },
+    { path: PATHS.FORM_HANDLING_DOM_REF.FORM_SUBMISSION, ...lazyPage(() => import('../pages/form-handling-dom-ref/FormSubmission/FormSubmission')) },
+  ],
+};
+
+export default formHandlingDomRefRoutes;

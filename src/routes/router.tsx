@@ -2,6 +2,7 @@ import { createBrowserRouter, type RouteObject } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
 import { lazyPage } from './lazy-page';
 import effectAsyncRoutes from './effect-async-routes';
+import formHandlingDomRefRoutes from './form-handling-dom-ref-routes';
 import listRenderingRoutes from './list-rendering-routes';
 import { PATHS } from './paths';
 import stateImmutabilityRoutes from './state-immutability-routes';
@@ -14,6 +15,7 @@ const pageRoutes: RouteObject[] = [
   stateImmutabilityRoutes,
   listRenderingRoutes,
   effectAsyncRoutes,
+  formHandlingDomRefRoutes,
   { path: '*', ...lazyPage(() => import('../pages/NotFound')) },
 ];
 

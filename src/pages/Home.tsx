@@ -18,6 +18,10 @@ const mainMenu = [
     title: '이펙트 비동기 통신',
     path: PATHS.EFFECT_ASYNC.HOME,
   },
+  {
+    title: '폼 핸들링 DOM 참조',
+    path: PATHS.FORM_HANDLING_DOM_REF.HOME,
+  },
 ];
 
 const Home = () => {

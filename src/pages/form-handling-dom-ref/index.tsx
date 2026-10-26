@@ -1,0 +1,32 @@
+import { Link } from 'react-router-dom';
+import { PATHS } from '../../routes/paths';
+
+const BASE_URL = PATHS.FORM_HANDLING_DOM_REF;
+
+// 메뉴별 학습 주제 설명
+const MENUS = [
+  {
+    path: BASE_URL.FORM_SUBMISSION,
+    title: '폼 제출',
+    description: '회원 가입 폼의 각 입력 필드를 검증하고, 제출 시 비동기 통신을 시뮬레이션해 성공 화면까지 처리하는 방법을 익힙니다.',
+  },
+] as const;
+
+export default function Home() {
+  return (
+    <section className="mx-auto max-w-2xl space-y-6">
+      <h2 className="text-xl font-bold">폼 핸들링 DOM 참조</h2>
+
+      <ul className="space-y-4">
+        {MENUS.map(({ path, title, description }) => (
+          <li key={path} className="rounded border border-gray-300 p-4 hover:bg-amber-50">
+            <Link to={path} className="block">
+              <h3 className="font-semibold">{title}</h3>
+              <p className="mt-1 text-sm text-gray-600">{description}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}

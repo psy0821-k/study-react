@@ -35,4 +35,8 @@ export const PATHS = {
     DEBOUNCE: 'debounce',
     DATA_FETCHING: 'data-fetching',
   },
+  FORM_HANDLING_DOM_REF: {
+    HOME: '/form-handling-dom-ref',
+    FORM_SUBMISSION: 'form-submission',
+  },
 } as const;
