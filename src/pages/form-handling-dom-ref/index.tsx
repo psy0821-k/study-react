@@ -15,6 +15,11 @@ const MENUS = [
     title: '폼 제출',
     description: '회원 가입 폼의 각 입력 필드를 검증하고, 제출 시 비동기 통신을 시뮬레이션해 성공 화면까지 처리하는 방법을 익힙니다.',
   },
+  {
+    path: BASE_URL.FILE_UPLOAD,
+    title: '파일 업로드',
+    description: 'useRef로 파일 인풋 DOM에 접근해 이미지 미리보기를 만들고, 업로드 결과와 클립보드 복사까지 처리하는 방법을 익힙니다.',
+  },
 ] as const;
 
 export default function Home() {

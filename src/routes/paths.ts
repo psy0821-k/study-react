@@ -39,5 +39,6 @@ export const PATHS = {
     HOME: '/form-handling-dom-ref',
     MULTI_INPUT_FORM: 'multi-input-form',
     FORM_SUBMISSION: 'form-submission',
+    FILE_UPLOAD: 'file-upload',
   },
 } as const;
