@@ -6,6 +6,11 @@ const BASE_URL = PATHS.EFFECT_ASYNC;
 // 메뉴별 학습 주제 설명
 const MENUS = [
   {
+    path: BASE_URL.EFFECT_BASIC,
+    title: 'Effect 기초',
+    description: '렌더링과 커밋 이후 실행되는 useEffect의 동작 순서를 콘솔 로그로 확인하고, 외부 시스템(document.title)과 동기화하는 방법을 익힙니다.',
+  },
+  {
     path: BASE_URL.DATA_FETCHING,
     title: '데이터 페칭',
     description: 'useEffect로 마운트 시 비동기 데이터를 불러오고, 로딩/에러/성공 상태에 따라 화면을 렌더링하는 방법을 익힙니다.',
