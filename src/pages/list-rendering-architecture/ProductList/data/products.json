@@ -1,0 +1,38 @@
+[
+  {
+    "id": 4207890,
+    "name": "시그니처 세라믹 화병",
+    "price": 48000,
+    "isSoldOut": false
+  },
+  {
+    "id": 210520,
+    "name": "고양이",
+    "price": 32500,
+    "isSoldOut": false
+  },
+  {
+    "id": 1007100,
+    "name": "네온사인 클래스",
+    "price": 19000,
+    "isSoldOut": true
+  },
+  {
+    "id": 1200000,
+    "name": "풀잎 조형",
+    "price": 28000,
+    "isSoldOut": false
+  },
+  {
+    "id": 6000000,
+    "name": "울타리 방문 설치",
+    "price": 155000,
+    "isSoldOut": false
+  },
+  {
+    "id": 1000001,
+    "name": "단독 펜션 숙박",
+    "price": 420000,
+    "isSoldOut": false
+  }
+]

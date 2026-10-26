@@ -6,6 +6,7 @@ const listRenderingRoutes: RouteObject = {
   path: PATHS.LIST_RENDERING.HOME,
   children: [
     { index: true, ...lazyPage(() => import('../pages/list-rendering-architecture')) },
+    { path: PATHS.LIST_RENDERING.PRODUCT_LIST, ...lazyPage(() => import('../pages/list-rendering-architecture/ProductList')) },
   ],
 };
 

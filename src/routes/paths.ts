@@ -19,5 +19,6 @@ export const PATHS = {
   },
   LIST_RENDERING: {
     HOME: '/list-rendering',
+    PRODUCT_LIST: 'product-list',
   },
 } as const;
