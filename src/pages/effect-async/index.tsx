@@ -21,6 +21,11 @@ const MENUS = [
     description: '의존성 배열에 따라 이펙트가 다시 실행되는 시점을 콘솔 로그로 관찰하고, 의존성을 올바르게 지정하는 방법을 익힙니다.',
   },
   {
+    path: BASE_URL.IGNORE_STATE_UPDATE,
+    title: '상태 업데이트 무시',
+    description: '요청이 중복되거나 입력이 빠르게 바뀔 때, 클린업의 ignore 플래그로 이전 응답이 화면에 반영되지 않도록 막습니다.',
+  },
+  {
     path: BASE_URL.DATA_FETCHING,
     title: '데이터 페칭',
     description: 'useEffect로 마운트 시 비동기 데이터를 불러오고, 로딩/에러/성공 상태에 따라 화면을 렌더링하는 방법을 익힙니다.',

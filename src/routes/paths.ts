@@ -30,6 +30,7 @@ export const PATHS = {
     EFFECT_BASIC: 'effect-basic',
     EFFECT_CLEANUP: 'effect-cleanup',
     EFFECT_DEPENDENCIES: 'effect-dependencies',
+    IGNORE_STATE_UPDATE: 'ignore-state-update',
     DATA_FETCHING: 'data-fetching',
   },
 } as const;
