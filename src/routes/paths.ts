@@ -28,6 +28,7 @@ export const PATHS = {
   EFFECT_ASYNC: {
     HOME: '/effect-async',
     EFFECT_BASIC: 'effect-basic',
+    EFFECT_CLEANUP: 'effect-cleanup',
     DATA_FETCHING: 'data-fetching',
   },
 } as const;

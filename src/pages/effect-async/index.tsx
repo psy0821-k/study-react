@@ -11,6 +11,11 @@ const MENUS = [
     description: '렌더링과 커밋 이후 실행되는 useEffect의 동작 순서를 콘솔 로그로 확인하고, 외부 시스템(document.title)과 동기화하는 방법을 익힙니다.',
   },
   {
+    path: BASE_URL.EFFECT_CLEANUP,
+    title: 'Effect 클린업',
+    description: '타이머와 이벤트 리스너처럼 이펙트가 만든 자원을 클린업 함수로 정리하고, 컴포넌트 소멸 시 동작을 관찰합니다.',
+  },
+  {
     path: BASE_URL.DATA_FETCHING,
     title: '데이터 페칭',
     description: 'useEffect로 마운트 시 비동기 데이터를 불러오고, 로딩/에러/성공 상태에 따라 화면을 렌더링하는 방법을 익힙니다.',
