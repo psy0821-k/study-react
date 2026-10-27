@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { PATHS } from '../../routes/paths';
+import LearningGuide from '../../components/LearningGuide';
 
 const BASE_URL = PATHS.STATE_RENDERING;
 
@@ -37,17 +38,35 @@ const MENUS = [
   },
 ] as const;
 
+// 왜 배워야 하는지
+const REASONS = [
+  'React 화면은 상태의 결과이므로, 상태가 바뀌어야 화면이 바뀝니다.',
+  '상태는 렌더링 시점의 스냅샷이고 업데이트는 모아서 처리되어, 모르고 쓰면 값이 바로 바뀌지 않는 버그를 만나기 쉽습니다.',
+  '조건부 렌더링, 제어 컴포넌트, 이벤트 처리는 거의 모든 화면 구현의 기본기입니다.',
+] as const;
+
+// 사용했을 때의 장점
+const BENEFITS = [
+  '화면 변화를 상태 변화로 예측하고 설명할 수 있습니다.',
+  '스냅샷과 배치를 이해하면 상태 관련 버그를 빠르게 찾을 수 있습니다.',
+  '제어 컴포넌트로 입력값 관리와 유효성 검사를 한곳에서 처리할 수 있습니다.',
+] as const;
+
 export default function Home() {
   return (
     <section className="mx-auto max-w-2xl space-y-6">
       <h2 className="text-xl font-bold">상태와 렌더링</h2>
       <p>React의 상태 관리와 렌더링 핵심 개념을 주제별로 실습하는 공간입니다.</p>
+      <LearningGuide reasons={REASONS} benefits={BENEFITS} orderGuide="아래 순서대로 학습하면 상태 만들기 → 화면 분기 → 입력과 이벤트 → 상태 갱신 원리 순으로 자연스럽게 이어집니다." />
+
 
       <ul className="space-y-4">
-        {MENUS.map(({ path, title, description }) => (
+        {MENUS.map(({ path, title, description }, index) => (
           <li key={path} className="rounded border border-gray-300 p-4 hover:bg-amber-50">
             <Link to={path} className="block">
-              <h3 className="font-semibold">{title}</h3>
+              <h3 className="font-semibold">
+                {index + 1}. {title}
+              </h3>
               <p className="mt-1 text-sm text-gray-600">{description}</p>
             </Link>
           </li>
