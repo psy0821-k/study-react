@@ -40,5 +40,6 @@ export const PATHS = {
     MULTI_INPUT_FORM: 'multi-input-form',
     FORM_SUBMISSION: 'form-submission',
     FILE_UPLOAD: 'file-upload',
+    REF_STUDY: 'ref-study',
   },
 } as const;

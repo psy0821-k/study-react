@@ -20,6 +20,11 @@ const MENUS = [
     title: '파일 업로드',
     description: 'useRef로 파일 인풋 DOM에 접근해 이미지 미리보기를 만들고, 업로드 결과와 클립보드 복사까지 처리하는 방법을 익힙니다.',
   },
+  {
+    path: BASE_URL.REF_STUDY,
+    title: 'useRef 훅 활용',
+    description: '리렌더링 없이 값을 유지하는 ref의 특징을 state와 비교하고, 타이머 ID 보관과 DOM 포커스 제어 사례로 익힙니다.',
+  },
 ] as const;
 
 export default function Home() {
