@@ -41,5 +41,6 @@ export const PATHS = {
     FORM_SUBMISSION: 'form-submission',
     FILE_UPLOAD: 'file-upload',
     REF_STUDY: 'ref-study',
+    MULTI_FILES_UPLOAD: 'multi-files-upload',
   },
 } as const;

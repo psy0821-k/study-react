@@ -25,6 +25,11 @@ const MENUS = [
     title: 'useRef 훅 활용',
     description: '리렌더링 없이 값을 유지하는 ref의 특징을 state와 비교하고, 타이머 ID 보관과 DOM 포커스 제어 사례로 익힙니다.',
   },
+  {
+    path: BASE_URL.MULTI_FILES_UPLOAD,
+    title: '다중 파일 업로드',
+    description: '여러 파일을 선택해 imgbb에 업로드하고, 결과 목록을 확인하는 방법을 익힙니다.',
+  },
 ] as const;
 
 export default function Home() {

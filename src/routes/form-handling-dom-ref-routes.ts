@@ -10,6 +10,7 @@ const formHandlingDomRefRoutes: RouteObject = {
     { path: PATHS.FORM_HANDLING_DOM_REF.FORM_SUBMISSION, ...lazyPage(() => import('../pages/form-handling-dom-ref/FormSubmission/FormSubmission')) },
     { path: PATHS.FORM_HANDLING_DOM_REF.FILE_UPLOAD, ...lazyPage(() => import('../pages/form-handling-dom-ref/FileUpload/FileUpload')) },
     { path: PATHS.FORM_HANDLING_DOM_REF.REF_STUDY, ...lazyPage(() => import('../pages/form-handling-dom-ref/RefStudy/RefStudy')) },
+    { path: PATHS.FORM_HANDLING_DOM_REF.MULTI_FILES_UPLOAD, ...lazyPage(() => import('../pages/form-handling-dom-ref/MultiFilesUpload/MultiFilesUpload')) },
   ],
 };
 
