@@ -30,6 +30,11 @@ const MENUS = [
     title: '다중 파일 업로드',
     description: '여러 파일을 선택해 imgbb에 업로드하고, 결과 목록을 확인하는 방법을 익힙니다.',
   },
+  {
+    path: BASE_URL.REACT_HOOK_FORM,
+    title: 'React Hook Form',
+    description: 'useForm과 zodResolver로 스키마 검증, FormProvider, useFieldArray, useWatch 사용법을 익힙니다.',
+  },
 ] as const;
 
 export default function Home() {

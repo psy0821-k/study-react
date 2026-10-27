@@ -11,6 +11,7 @@ const formHandlingDomRefRoutes: RouteObject = {
     { path: PATHS.FORM_HANDLING_DOM_REF.FILE_UPLOAD, ...lazyPage(() => import('../pages/form-handling-dom-ref/FileUpload/FileUpload')) },
     { path: PATHS.FORM_HANDLING_DOM_REF.REF_STUDY, ...lazyPage(() => import('../pages/form-handling-dom-ref/RefStudy/RefStudy')) },
     { path: PATHS.FORM_HANDLING_DOM_REF.MULTI_FILES_UPLOAD, ...lazyPage(() => import('../pages/form-handling-dom-ref/MultiFilesUpload/MultiFilesUpload')) },
+    { path: PATHS.FORM_HANDLING_DOM_REF.REACT_HOOK_FORM, ...lazyPage(() => import('../pages/form-handling-dom-ref/ReactHookForm/ReactHookForm')) },
   ],
 };
 

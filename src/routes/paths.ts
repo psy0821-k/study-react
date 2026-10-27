@@ -42,5 +42,6 @@ export const PATHS = {
     FILE_UPLOAD: 'file-upload',
     REF_STUDY: 'ref-study',
     MULTI_FILES_UPLOAD: 'multi-files-upload',
+    REACT_HOOK_FORM: 'react-hook-form',
   },
 } as const;
