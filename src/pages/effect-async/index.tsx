@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { PATHS } from '../../routes/paths';
+import LearningGuide from '../../components/LearningGuide';
 
 const BASE_URL = PATHS.EFFECT_ASYNC;
 
@@ -42,16 +43,35 @@ const MENUS = [
   },
 ] as const;
 
+// 왜 배워야 하는지
+const REASONS = [
+  '타이머, API 요청, DOM처럼 렌더링 바깥의 외부 시스템과 동기화하려면 useEffect가 필요합니다.',
+  '클린업과 의존성 배열을 모르면 메모리 누수, 무한 루프, 중복 요청이 생깁니다.',
+  '비동기 응답은 요청 순서대로 도착하지 않아, 오래된 응답이 화면을 덮어쓸 수 있습니다.',
+] as const;
+
+// 사용했을 때의 장점
+const BENEFITS = [
+  '클린업으로 타이머와 이벤트 리스너 같은 자원 누수를 막을 수 있습니다.',
+  'ignore 플래그와 AbortController로 오래된 응답이 화면에 반영되는 것을 차단합니다.',
+  '디바운스로 불필요한 요청을 줄여 서버와 사용자 경험 모두 개선됩니다.',
+  '로딩, 에러, 성공 상태를 일관된 패턴으로 처리할 수 있습니다.',
+] as const;
+
 export default function Home() {
   return (
     <section className="mx-auto max-w-2xl space-y-6">
       <h2 className="text-xl font-bold">이펙트 비동기 통신</h2>
 
+      <LearningGuide reasons={REASONS} benefits={BENEFITS} orderGuide="아래 순서대로 학습하면 Effect 기본 → 클린업 → 의존성 → 비동기 문제 해결 → 실전 데이터 페칭 순으로 자연스럽게 이어집니다." />
+
       <ul className="space-y-4">
-        {MENUS.map(({ path, title, description }) => (
+        {MENUS.map(({ path, title, description }, index) => (
           <li key={path} className="rounded border border-gray-300 p-4 hover:bg-amber-50">
             <Link to={path} className="block">
-              <h3 className="font-semibold">{title}</h3>
+              <h3 className="font-semibold">
+                {index + 1}. {title}
+              </h3>
               <p className="mt-1 text-sm text-gray-600">{description}</p>
             </Link>
           </li>
