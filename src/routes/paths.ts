@@ -35,6 +35,13 @@ export const PATHS = {
     DEBOUNCE: 'debounce',
     DATA_FETCHING: 'data-fetching',
   },
+  STATE_IMMER: {
+    HOME: '/state-immer',
+    REFERENCE_CHECK: 'reference-check',
+    TODOS_CRUD: 'todos-crud',
+    TODOS_CRUD_WITH_IMMER: 'todos-crud-with-immer',
+    DERIVED_STATE: 'derived-state',
+  },
   FORM_HANDLING_DOM_REF: {
     HOME: '/form-handling-dom-ref',
     MULTI_INPUT_FORM: 'multi-input-form',

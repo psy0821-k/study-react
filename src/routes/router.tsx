@@ -5,6 +5,7 @@ import effectAsyncRoutes from './effect-async-routes';
 import formHandlingDomRefRoutes from './form-handling-dom-ref-routes';
 import listRenderingRoutes from './list-rendering-routes';
 import { PATHS } from './paths';
+import stateImmerRoutes from './state-immer-routes';
 import stateImmutabilityRoutes from './state-immutability-routes';
 import { stateRenderingRoutes } from './state-rendering-routes';
 
@@ -16,6 +17,7 @@ const pageRoutes: RouteObject[] = [
   listRenderingRoutes,
   effectAsyncRoutes,
   formHandlingDomRefRoutes,
+  stateImmerRoutes,
   { path: '*', ...lazyPage(() => import('../pages/NotFound')) },
 ];
 

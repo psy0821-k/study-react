@@ -22,6 +22,10 @@ const mainMenu = [
     title: '폼 핸들링 DOM 참조',
     path: PATHS.FORM_HANDLING_DOM_REF.HOME,
   },
+  {
+    title: '상태 관리와 Immer',
+    path: PATHS.STATE_IMMER.HOME,
+  },
 ];
 
 const Home = () => {
